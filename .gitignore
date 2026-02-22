@@ -1,0 +1,103 @@
+# Data files (too large for git)
+data/raw/
+data/processed/
+data/index/
+data/*.json
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+
+# spaCy models
+*.pkl
+*.model
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node.js
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+web/.next/
+web/out/
+web/.vercel
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.pytest_cache/
+web/playwright-report/
+web/test-results/
+
+# Docker
+docker/volumes/
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Database
+*.db
+*.sqlite3
+
+# Model weights (download separately)
+models/
+*.onnx
+*.pt
+*.bin
+!web/lib/
+.cache/
+logs/
+data/zips/
+data/examples/
+web/tsconfig.tsbuildinfo

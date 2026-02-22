@@ -1,0 +1,26 @@
+# GPU-specific dependencies for OCR and Whisper
+#
+# IMPORTANT: Install in two stages because flash-attn needs torch during build:
+#   1. pip install --extra-index-url https://download.pytorch.org/whl/cu121 torch>=2.0.0
+#   2. pip install -r requirements-gpu.txt
+#
+# Or skip flash-attn (optional) and install everything at once:
+#   pip install -r requirements-gpu.txt
+
+# PyTorch with CUDA 12.1 (adjust for your CUDA version)
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch>=2.0.0
+
+# Transformers for LightOnOCR-2
+transformers>=4.36.0
+accelerate>=0.25.0
+
+# For faster inference
+bitsandbytes>=0.41.0  # 8-bit quantization
+# flash-attn>=2.0.0   # Optional: Uncomment after torch is installed. Requires compilation.
+
+# Whisper dependencies
+openai-whisper>=20231117
+
+# For monitoring GPU usage
+nvidia-ml-py3>=7.352.0
